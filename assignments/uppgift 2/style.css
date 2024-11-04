@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: darkcyan;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    font-weight: 900;
+}
+
+footer {
+    background-color: lightseagreen;
+}
+
+.primary-navigation {
+    display: flex;
+
+    gap: 1rem; /*separate*/
+
+    list-style: none;
+    color: white;
+}
