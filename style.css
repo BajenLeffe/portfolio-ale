@@ -12,11 +12,11 @@ STYLE.CSS - global styling för webbsidan
 
   --clr-primary: #161616;               /* bakgrundsfärg och primära färgen */
   --clr-secondary: rgb(215, 175, 255);       /* navigationsfärg och bakgrundsfärg när man klickar  */
-  --clr-cta: rgb(87, 3, 84);          /* CTA-färg */
-  --clr-highlight: rgb(71, 23, 55);   /* highlight i menyn */
+  --clr-cta: rgba(87, 3, 84, 0.603);          /* CTA-färg */
+  --clr-highlight: rgb(138, 72, 116);   /* highlight i menyn */
 
   --clr-navbar: #222;
-  --clr-dropdown-background: #333333;     /* dropdown-menyns bakgrund */
+  --clr-dropdown-background: #8b7d7d;     /* dropdown-menyns bakgrund */
 
   --clr-hover: var(--clr-highlight);            /* markeringsfärg */
   --clr-active: var(--clr-dropdown-background); /* färg på text när man klickar */
