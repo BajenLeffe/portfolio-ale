@@ -380,18 +380,18 @@ RESPONSIVITET
 TODO
 /* button styling */
 
-button {
+.portfolio-card {
   all: unset;
   font-family: inherit;
 
-  display: block;
+  display: grid;
 
   padding: 1rem 2rem;
 
   font-weight: 500;
 
-  color:  rgb(24, 209, 113);
-  background-color: rgb(24, 209, 113);
+  color:  #553958;
+  background-color: rgb(52, 202, 125);
   
   border-radius: 333rem;
 
@@ -420,8 +420,7 @@ button {
   box-shadow: none;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
+.portfolio-card:hover {
   background: linear-gradient(to top, rgb(5, 238, 118), hsl(147, 81%, 65%));
   color: white;
 }
@@ -441,23 +440,3 @@ button {
   background: linear-gradient(to bottom, rgb(5, 238, 118), hsl(147, 81%, 65%));
   box-shadow: 0 1px 1px hsla(149 93% 12% / 0.3);
 }
-
-
-.takete {
-  border-radius: 0%;
-
-}
-
-.takete:hover {
-  background: rgb(5, 238, 118);
-}
-
-
-.takete:active {
-  background:  hsl(149 96%  48% / 0.7);
-}
-
-.takete:last-child:hover {
-  background: transparent;
-
-} 
