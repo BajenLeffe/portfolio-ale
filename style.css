@@ -8,7 +8,7 @@ STYLE.CSS - global styling för webbsidan
 
 /* TODO: BÖRJA HÄR! ändra färger för din meny */
 :root {
-  --clr-copy: #e6e6e6;    /* brödtext på sidan */
+  --clr-copy: #cacaca;    /* brödtext på sidan */
 
   --clr-primary: #161616;               /* bakgrundsfärg och primära färgen */
   --clr-secondary: rgb(182, 180, 180);       /* navigationsfärg och bakgrundsfärg när man klickar  */
@@ -21,7 +21,7 @@ STYLE.CSS - global styling för webbsidan
   --clr-hover: var(--clr-highlight);            /* markeringsfärg */
   --clr-active: var(--clr-dropdown-background); /* färg på text när man klickar */
   
-  --clr-line: #ebebeb;              /* linje */
+  --clr-line: #cacaca;              /* linje */
 
   --clr-navbar-shadow: 0 4px 12px rgba(68, 3, 66, 0.521);  /* för ljus UI använd en ljusgrå nyans */
   --clr-menu-shadow: 0 4px 24px  rgb(71,23,55);   /* för mörkt UI använd en mörkare nyans av cta */
@@ -35,6 +35,11 @@ STYLE.CSS - global styling för webbsidan
   --ff-secondary: "Segoe UI", sans-serif;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
+}
 
 /* layout styling */
 
@@ -380,8 +385,17 @@ RESPONSIVITET
 TODO
 /* button styling */
 
+.fake-h3 {
+    all: unset;
+    font-family: inherit;
+    font-size: large;
+}
+
+
+
 .portfolio-card {
   all: unset;
+  box-sizing: border-box;
   font-family: inherit;
 
   display: grid;
@@ -390,8 +404,8 @@ TODO
 
   font-weight: 500;
 
-  color:  #553958;
-  background-color: rgb(52, 202, 125);
+  color:  #cacaca;
+  background-color: rgb(87, 51, 94);
   
   border-radius: 333rem;
 
@@ -421,7 +435,7 @@ TODO
 }
 
 .portfolio-card:hover {
-  background: linear-gradient(to top, rgb(5, 238, 118), hsl(147, 81%, 65%));
+  background: linear-gradient(to top, rgb(102, 116, 78), rgb(193, 216, 152));
   color: white;
 }
 
@@ -440,3 +454,5 @@ TODO
   background: linear-gradient(to bottom, rgb(5, 238, 118), hsl(147, 81%, 65%));
   box-shadow: 0 1px 1px hsla(149 93% 12% / 0.3);
 }
+
+
