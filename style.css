@@ -119,7 +119,8 @@ img {
   display: block;
 
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+
   
   font-style: italic;
 }
@@ -391,14 +392,21 @@ TODO
     font-size: large;
 }
 
-
+.cards {
+  width: 70%;
+  margin-inline: auto;
+}
 
 .portfolio-card {
   all: unset;
   box-sizing: border-box;
   font-family: inherit;
 
-  display: grid;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   padding: 1rem 2rem;
 
@@ -454,5 +462,7 @@ TODO
   background: linear-gradient(to bottom, rgb(5, 238, 118), hsl(147, 81%, 65%));
   box-shadow: 0 1px 1px hsla(149 93% 12% / 0.3);
 }
+
+
 
 
