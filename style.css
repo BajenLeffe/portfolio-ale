@@ -38,7 +38,7 @@ STYLE.CSS - global styling för webbsidan
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:1rem;
+  gap: 1rem;
 }
 
 /* layout styling */
@@ -48,6 +48,8 @@ STYLE.CSS - global styling för webbsidan
 *::after {
   box-sizing: border-box;
 }
+
+
 
 body {
   margin: 0;
@@ -79,11 +81,10 @@ nav {
 }
 
 main {
-  display: grid;
-  place-content: center;
+ 
 
-  height: 80vh;
-
+ 
+  
   padding-inline: 1rem;
   text-align: center;
 }
@@ -113,6 +114,7 @@ main {
 }
 
 
+
 /* image styling */
 
 img {
@@ -124,6 +126,7 @@ img {
   
   font-style: italic;
 }
+
 
 .logo {
   width: calc(var(--menu-item-size) * 1.3);
@@ -138,6 +141,11 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-primary);
+  color: #cacaca;
+}
+
+h1 {
+  font-size: xx-large;
 }
 
 p {
@@ -386,15 +394,56 @@ RESPONSIVITET
 TODO
 /* button styling */
 
+span {
+  font-size: smaller;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  padding: 3rem;
+  
+}
+
 .fake-h3 {
-    all: unset;
-    font-family: inherit;
-    font-size: large;
+  
+  font-size: 1.2em;
+  font-weight: 700;
+    
+}
+
+.card-img {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  place-items: center;
+}
+
+button {
+  display: grid;
+  grid-column: span 2;
 }
 
 .cards {
-  width: 70%;
+  width: 50%;
   margin-inline: auto;
+  display: grid;
+  grid-column: span 3 ;
+  grid-row: 2;
+}
+
+article {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
+
+}
+
+.button-text {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .portfolio-card {
@@ -404,9 +453,10 @@ TODO
 
   overflow: hidden;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+
 
   padding: 1rem 2rem;
 
@@ -443,7 +493,7 @@ TODO
 }
 
 .portfolio-card:hover {
-  background: linear-gradient(to top, rgb(102, 116, 78), rgb(193, 216, 152));
+  background: linear-gradient(to top, rgb(79, 83, 72), rgb(149, 155, 140));
   color: white;
 }
 
@@ -463,6 +513,39 @@ TODO
   box-shadow: 0 1px 1px hsla(149 93% 12% / 0.3);
 }
 
+footer {
+  background-color: #252525;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  font-weight: 900;
+}
+
+a {
+  color: lightcoral ;
+  transition: 150ms ease-in-out;
+  text-underline-offset: 0.4em;
+  text-decoration-color: transparent;
+}
+
+a:visited {
+  color:darkviolet;
+}
+
+a:hover {
+  color:rgb(43, 226, 134);
+  transition: 150ms ease-in-out; 
+  text-underline-offset: 0.4em;
+  text-decoration-color: blue;
+  
+}
+
+a:active {
+  color: rgb(4, 97, 66);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 
