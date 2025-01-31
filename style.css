@@ -10,7 +10,7 @@ STYLE.CSS - global styling för webbsidan
 :root {
   --clr-copy: #cacaca;    /* brödtext på sidan */
 
-  --clr-primary: #161616;               /* bakgrundsfärg och primära färgen */
+  --clr-primary:  #161616;               /* bakgrundsfärg och primära färgen */
   --clr-secondary: rgb(182, 180, 180);       /* navigationsfärg och bakgrundsfärg när man klickar  */
   --clr-cta: rgba(197, 108, 194, 0.733);          /* CTA-färg */
   --clr-highlight: rgb(138, 72, 116);   /* highlight i menyn */
@@ -39,6 +39,7 @@ STYLE.CSS - global styling för webbsidan
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
 }
 
 /* layout styling */
@@ -61,6 +62,12 @@ body {
 
   font-family: var(--ff-secondary);
   font-size: var(--menu-item-size);
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+  to{opacity:1;}
 }
 
 nav {
@@ -465,7 +472,7 @@ article {
   color:  #cacaca;
   background-color: rgb(87, 51, 94);
   
-  border-radius: 333rem;
+  border-radius: 16px;
 
   box-shadow: 0 4px 4px hsla(149 93% 12% / 0.2);
 
