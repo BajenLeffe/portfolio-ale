@@ -6,15 +6,41 @@ body {
     margin: 0;
     font-weight: 500;
     font-family: sans-serif;
-    background-color: darkslategray;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+p, h1, h2, a {
+    margin: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 header, footer {
-background-color: darkcyan;
-padding-block: 2rem;
-padding-inline: 1rem;
-font-weight: 900;
+    background-color: darkcyan;
+    padding: 0.1rem 1rem;
+    font-weight: 900;
+    width: 100%;
 }
 
 nav {
@@ -22,6 +48,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.flexthingy {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -48,12 +79,20 @@ nav {
     text-decoration: underline;
 }
 
-.hero {
+section, article {
+    padding: 1rem;
     display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .hero img {
@@ -65,4 +104,39 @@ nav {
 .hero-text {
     flex: 1;
     text-align: left;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.maincontnet {
+    background-color: white;
+}
+
+.maincontentwimg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.maincontentwimg .text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+}
+
+.text {
+    text-align: left;
+}
+
+.contentimg {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.5rem;
+    order: 2;
 }
