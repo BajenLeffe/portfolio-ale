@@ -24,7 +24,7 @@ body {
 main {
   margin-inline: auto;
   width: 100%;
-  max-width: 900px;
+  max-width: 66rem;
   padding: 1rem;
 }
 
@@ -43,7 +43,7 @@ article {
   margin: 1rem;
   padding: 1rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,7 +113,7 @@ nav {
   flex-wrap: wrap;
   padding: 0.5rem 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -126,7 +126,7 @@ nav {
 
 .logo {
   border-radius: 50%;
-  width: 42px;
+  width: 2.5rem;
 }
 
 .primary-navigation {
@@ -183,7 +183,7 @@ nav {
 .maincontentwimg .text {
   flex: 1;
   text-align: left;
-  max-width: 500px;
+  max-width: 31rem;
 }
 
 .contentimg {
