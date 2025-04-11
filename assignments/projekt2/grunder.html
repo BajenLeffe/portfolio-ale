@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grunderna</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grunder.css">
 
 </head>
+
 <body>
     <header>
         <nav class="container">
@@ -16,14 +18,396 @@
             </div>
             <ul class="primary-navigation">
                 <li><a href="/">Hem</a></li>
+                <li><a href="index.html">P2 main</a></li>
                 <li><a href="grunder.html">Grunderna</a></li>
-                <li><a href="#bottom">Historia</a></li>
-                <li><a href="/about.html">Tillgänglighet</a></li>
+                <li><a href="tillgänglighet.html">Tillgänglighet</a></li>
                 <li><a href="#bottom">Hur funkar det?</a></li>
                 <li><a href="#bottom">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-    
+    <main>
+        <section>
+
+            <div class="wrapper" id="html-element">
+                <h1>Element & Egenskaper</h1>
+                <h2>HTML-Element</h2>
+                <h3>Meta-taggar</h3>
+
+
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            &lt;!DOCTYPE&gt;: Denna deklaration specificerar vilken version av HTML som används i
+                            dokumentet.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;html&gt;: Rotelementet i ett HTML-dokument som innehåller alla andra element.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;head&gt;: En behållare för metadata om dokumentet, såsom titeln, länkar till stilmallar
+                            och
+                            metataggar.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;title&gt;: Definierar titeln på HTML-dokumentet, som visas i webbläsarens titelrad eller
+                            flik.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;style&gt;: Används för att bädda in CSS (Cascading Style Sheets) i ett HTML-dokument.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;link&gt;: Specificerar externa resurser, som CSS-filer, att användas i dokumentet.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;body&gt;: Huvudinnehållsområdet i HTML-dokumentet där text, bilder och annat innehåll
+                            visas.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="semantiska-element">
+                <h3>Semantiska Element</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            &lt;main&gt;: Representerar huvudinnehållet i dokumentet, och det skall endast finnas ett
+                            &lt;main>
+                            -element på varje HTML-sida.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;header&gt;: Innehåller vanligtvis introducerande innehåll eller en webbplatslogotyp och
+                            navigation som rör hela webbplatsen.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;section&gt;: Delar upp innehållet i avsnitt, ofta med en rubrik, och används för att
+                            gruppera
+                            relaterat innehåll.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;footer&gt;: Innehåller vanligtvis information om företaget/skaparen, upphovsrätt eller
+                            kontaktuppgifter.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;arcticle&gt;: Representerar en fristående del av innehåll som kan distribueras och
+                            återanvändas
+                            oberoende.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;aside&gt;: Innehåller innehåll som är delvis relaterat till huvudinnehållet, ofta
+                            används för
+                            sidofält.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="text-rubriker">
+                <h3>Text & Rubriker</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            &lt;a&gt;: Skapar hyperlänkar till andra webbsidor eller resurser.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;span&gt;: En generisk behållare som används för att applicera stilar eller skript på en
+                            specifik del av texten.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;p&gt;: Representerar ett stycke text.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;h1&gt;...&lt;h6&gt;:Definierar olika nivåer av rubriker, med &lt;h1&gt; som den högsta
+                            och &lt;h6&gt; som den lägsta.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;ol&gt;: Skapar en ordnad (numrerad) lista.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;ul&gt;: Skapar en oordnad (punktlista) lista.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;li&gt;: Definierar ett listobjekt inom en ordnad eller oordnad lista.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;strong&gt;: Renderar text i fet stil men är reserverat för SEO-nyckelord.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            &lt;em&gt;: Betonar text genom att rendera den i kursiv stil.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="layout">
+                <h3>Layout</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            &lt;div&gt;: En allmän behållare som används för att gruppera och formge element, ofta för
+                            layoutändamål eller för att applicera CSS-stilar.
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="typsnitt">
+                <h2>CSS-egenskaper</h2>
+                <h3>Typsnitt & stilar</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            font-family: Specificerar föredragna typsnittsfamiljer för text.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            font-weight: Bestämmer tjockleken på tecken i ett typsnitt, som fetstil.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            font-size: Anger storleken på texten inom ett element
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            text-decoration: Kontrollerar dekorationen av text, som underline, overline eller
+                            line-through
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            text-transform: Ändrar texten till versaler eller gemener
+
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="farger">
+
+                <h3>Färger</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            color: Definierar färgen på texten.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            background-color: Sätter bakgrundsfärgen för ett element.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            background-image: Sätter en linear-gradient eller bakgrundsbild.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            background: Sätter en bakrundsfärg, linear-gradient eller bild.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            linear-gradient(...): Skapar en övertoningsbakgrund för ett element.
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="layout2">
+
+                <h3>Layout</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            position: Definierar ett elements positionssättning på webbsidan.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            inset: Bestämmer avståndet från ett elements kant till dess föräldraelement.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            top, right, bottom, left: Definierar avståndet från ett elements kant till dess
+                            föräldraelement, riktat mot respektive kant (överkant, högerkant, underkant, vänsterkant).
+
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            display: Anger hur ett element ska visas på webbsidan.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            justify-content: Används med flexbox för att justera objekt längs huvudaxeln.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            align-items: Används med flexbox/CSS Grid för att justera objekt längs tväraxeln.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            flex-direction: Sätter avståndet mellan objekt i en flex-container.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            text-align: Bestämmer justeringen av texten inom ett element.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            gap: Avståndet mellan flexbox- eller CSS Grid-barn
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="storlek">
+
+                <h3>Storlek & marginal</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            width: Specificerar bredden på ett element.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            height: Bestämmer höjden på ett element.
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            max-width: Anger den maximala bredden som ett element kan ha.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            min-height: Anger den minsta tillåtna höjden för ett element.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            margin: Används för att justera avståndet utanför ett elements gränser.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            padding: Bestämmer det inre avståndet mellan ett elements innehåll och dess gränser.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            margin-inline: Sätter avståndet mellan objekt i en flex-container.Används för att justera
+                            det inre avståndet längs den inre axeln för ett blockelement.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="effekter">
+
+                <h3>Effekter</h3>
+                <ul class="taglist">
+                    <li>
+                        <p>
+                            object-fit: Styr hur en bild eller video ska anpassas i sin box.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            aspect-ratio: pecificerar en elements bredd-höjd-förhållande.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            first-child, last-child, nth-child: Selektorer som väljer specifika element baserat på deras position i förhållande till deras föräldraelement.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h3>Snabblänkar</h3>
+            <ul>
+                <li><a href="#html-element">HTML-Element</a></li>
+                <li><a href="#semantiska-element">Semantiska Element</a></li>
+                <li><a href="#text-rubriker">Text & Rubriker</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#typsnitt">Typsnitt & stilar</a></li>
+                <li><a href="#farger">Färger</a></li>
+                <li><a href="#layout2">CSS-layout</a></li>
+                <li><a href="#storlek">Storlek & marginal</a></li>
+                <li><a href="#effekter">Effekter</a></li>
+            </ul>
+        </aside>
+
+    </main>
+    <footer id="bottom">
+        <div class="container">
+            <p>Good stuff!</p>
+            <a href="https://www.youtube.com/watch?v=RSMMU2wX0Bk">To a really cool song!</a>
+            <a href="mailto:alessandro.muller@elev.ga.ntig.se">Contact me!</a>
+            <a href="#">Back to start!</a>
+
+    </footer>
 </body>
+
 </html>
