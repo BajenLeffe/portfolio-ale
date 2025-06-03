@@ -221,7 +221,6 @@ h3 {
     font-weight: 700;
 }
 
-/* Optimized and grouped mobile-first media query */
 @media (width < 480px) {
     .margins {
         width: 90%;
@@ -254,25 +253,26 @@ h3 {
     }
 
     .primary-navigation {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        width: max-content;
+        background: #fff;
         flex-direction: column;
-        align-items: end;
-        justify-content: start;
-        padding: 4rem 2rem;
-        background: darkgray;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         opacity: 0;
-        transform: translateX(100%);
-        transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+        transform: translateY(-10px);
+        transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
+        z-index: 2;
     }
 
     .primary-navigation.open {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     .hamburger-button {
@@ -281,6 +281,9 @@ h3 {
         align-items: center;
         justify-content: center;
         margin-left: 0.75rem;
+        padding: 0.5rem;
+        background-color: transparent;
+        border: none;
     }
 }
 
@@ -324,7 +327,6 @@ h3 {
     padding-inline: 1.5rem;
     padding-block: 0.75rem;
     overflow: hidden;
-    cursor: pointer;
     transition: color 125ms ease-in-out;
     isolation: isolate;
 }
@@ -368,7 +370,7 @@ h3 {
     text-underline-offset: 1.5em;
     text-decoration-thickness: 0;
     text-decoration-color: transparent;
-    transition: text-decoration-color 250ms ease-in-out, text-underline-offset 250ms ease-in-out, color 150ms ease-in-out;
+    transition: text-decoration-color 100ms ease-in-out, text-underline-offset 100ms ease-in-out, color 100ms ease-in-out;
 }
 
 .nav-link:hover,
@@ -454,18 +456,17 @@ img {
     all: unset;
     overflow: hidden;
     border-radius: 1rem;
-    transition: opacity 250ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
 }
 
 .card-image {
     aspect-ratio: 4/5;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .card-layout:hover .card {
     opacity: 0.4;
-    transition: opacity 250ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
 }
 
 .card-layout:hover .card:hover {
